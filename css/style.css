@@ -9,6 +9,17 @@ body {
 a {
   color: white;
 }
+h1 {
+  color: white;
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+p {
+  color: white;
+  margin-top: 5%;
+  font-size: 17px;
+}
 .main-nav {
   float: right;
   list-style-type: none;
@@ -43,7 +54,7 @@ a {
   /* margin-top: 200px; */
   width: 60%;
   height: 800px;
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 .left {
   margin-top: 8%;
@@ -52,14 +63,16 @@ a {
   height: 470px;
   margin-left: 7%;
   /* margin-right: 5%; */
-  border: 1px solid rgb(255, 0, 0);
+  /*  border: 1px solid rgb(255, 0, 0); */
+  position: relative;
+  left: -4%;
 }
 .right {
   margin-top: 8%;
   float: left;
   width: 45%;
   height: 470px;
-  border: 1px solid rgb(229, 255, 0);
+  /* border: 1px solid rgb(229, 255, 0); */
 }
 img {
   width: 45%;
@@ -73,4 +86,24 @@ img {
   position: relative;
   right: 38%;
   bottom: -2%;
+}
+
+button {
+  width: 35%;
+  border: none;
+  border-radius: 3%;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+#but-one {
+  margin: 5%;
+  margin-left: -1%;
+  background-color: rgb(63, 184, 69);
+}
+#but-two {
+  margin-left: -1%;
 }
