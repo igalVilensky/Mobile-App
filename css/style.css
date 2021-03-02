@@ -22,7 +22,7 @@ a {
 .main-nav li a {
   color: white;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 5px 12px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -37,40 +37,40 @@ a {
   max-width: 1050px;
   margin: auto;
 }
-.main-content {
-  max-width: 1050px;
-  margin: auto;
+.main {
+  position: relative;
+  left: 400px;
+  /* margin-top: 200px; */
+  width: 60%;
+  height: 800px;
+  border: 1px solid rgb(0, 0, 0);
 }
-.left-content {
-  max-width: 70vw;
-  width: 50%;
+.left {
+  margin-top: 8%;
   float: left;
+  width: 45%;
+  height: 470px;
+  margin-left: 7%;
+  /* margin-right: 5%; */
+  border: 1px solid rgb(255, 0, 0);
 }
-.right-content {
-  max-width: 70vw;
-  width: 20%;
-  float: right;
+.right {
+  margin-top: 8%;
+  float: left;
+  width: 45%;
+  height: 470px;
+  border: 1px solid rgb(229, 255, 0);
 }
-
 img {
-  width: 200px;
-  height: auto;
+  width: 45%;
+  height: 100%;
 }
-#img-one {
-  width: 500px;
+#onepic {
+  position: relative;
+  left: 35%;
 }
-/* .right-content img .first-img {
-  width: 500px;
-} */
-/* ul {
-  background-color: #dddddd;
+#twopic {
+  position: relative;
+  right: 38%;
+  bottom: -2%;
 }
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-} */
