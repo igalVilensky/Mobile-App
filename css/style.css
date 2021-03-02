@@ -11,7 +11,8 @@ a {
 }
 a:hover {
   color: red;
-  border: 1px solid black;
+  outline: 1px solid rgb(255, 255, 255);
+  /* outline-offset: -30px; */
 }
 h1 {
   color: white;
@@ -19,8 +20,8 @@ h1 {
   font-size: 40px;
 }
 .head :hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.5s;
+  transform: scale(1.4);
+  transition: transform 6s;
 }
 p {
   color: white;
@@ -28,8 +29,8 @@ p {
   font-size: 17px;
 }
 .parag :hover {
-  transform: scale(1.1);
-  transition: ease-in-out 0.5s;
+  transform: scale(1.4);
+  transition: transform 6s;
 }
 .main-nav {
   float: right;
@@ -58,15 +59,16 @@ p {
 }
 .logo img :hover {
   transform: scale(1.2);
-  transition: ease-in-out 0.5s;
+  transition: transform 2s;
 }
 .row {
   max-width: 1050px;
   margin: auto;
 }
 .main {
-  z-index: -1;
-  position: relative;
+  /* z-index: -1; */
+  position: absolute;
+  top: 20%;
   left: 400px;
   margin-top: 0px;
   width: 60%;
@@ -99,7 +101,7 @@ img {
 img:hover {
   transform: rotate(20deg);
   transform: scale(1.2);
-  transition: 0.3s ease-in-out all;
+  transition: transform 2s;
 }
 #onepic {
   position: relative;
@@ -131,6 +133,7 @@ button {
 }
 #but-one:hover {
   background-color: rgb(255, 75, 75);
+  outline: 1px solid rgb(255, 255, 255);
 }
 
 #but-two {
@@ -139,4 +142,5 @@ button {
 
 #but-two:hover {
   background-color: rgb(255, 75, 75);
+  outline: 1px solid rgb(255, 255, 255);
 }
