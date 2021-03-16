@@ -33,7 +33,8 @@ p {
   transition: transform 6s;
 }
 .main-nav {
-  float: right;
+  /* float: right; */
+  display: flex;
   list-style-type: none;
   margin-top: 70px;
 }
@@ -49,13 +50,16 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: bold;
+  /* width: fit-content; */
 }
-
+/* .logo {
+  margin-left: 41.5%;
+} */
 .logo img {
   margin-top: 50px;
+
   width: 150px;
   height: auto;
-  float: left;
 }
 .logo img :hover {
   transform: scale(1.2);
@@ -63,7 +67,13 @@ p {
 }
 .row {
   max-width: 1050px;
-  margin: auto;
+  /*  margin: auto; */
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+#menu {
+  border: 1px dotted orange;
 }
 .main {
   /* z-index: -1; */
@@ -143,4 +153,23 @@ button {
 #but-two:hover {
   background-color: rgb(255, 75, 75);
   outline: 1px solid rgb(255, 255, 255);
+}
+
+/* Hamburger menu */
+
+.hamburger {
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-direction: column;
+  border: 1px dotted yellow;
+  height: 30%;
+  margin-top: 5%;
+  background-color: transparent;
+}
+
+.hamburger div {
+  border: 1px dotted red;
+  width: 1vw;
+  height: 2vh;
 }
