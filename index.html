@@ -13,16 +13,18 @@
         <img src="/Mobile-App/img/logo_001.png" alt="" />
       </div>
       <div class="menu-wrapper">
-        <div class="menu">
+        <nav class="menu">
+          
           <ul class="main-nav">
-            <li><a href="https://www.cashdo.co.il">PRODUCTS</a></li>
+            <li><a href="#">PRODUCTS</a></li>
             <li><a href="#">PRICES</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">TEAM</a></li>
             <li><a href="#">LOGIN</a></li>
             <li><a href="#">SIGN UP</a></li>
           </ul>
-        </div>
+        
+        </nav>
         <div class="hamburger">
           <div></div>
           <div></div>
@@ -69,7 +71,7 @@
       let clicked = false;
       document.querySelector(".hamburger").addEventListener("click", () => {
         clicked = !clicked;
-        console.log(clicked);
+       
         if (clicked) {
           document.querySelector(".menu").style.cssText =
             "display: block;visibility: visible;z-index: 1;border-radius:5%;  ";
@@ -79,10 +81,10 @@
       });
     </script>
     <script>
-      let clicked = false;
+     /*  let clicked = false;
       document.querySelector(".hamburger").addEventListener("click", () => {
         clicked = !clicked;
-        console.log(clicked);
+        
         if (clicked) {
           document.querySelector(".menu-wrapper").style.cssText =
             "border: 2px solid white;";
@@ -90,7 +92,7 @@
           document.querySelector(".menu-wrapper").style.cssText =
             "visibility: hidden;";
         }
-      });
+      }); */
     </script>
   </body>
 </html>
