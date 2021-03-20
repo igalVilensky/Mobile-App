@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+   
     <div class="row">
       <nav class="navbar">
         <div class="logo">
@@ -66,32 +67,29 @@
       </div>
     </div>
 
-    <script>
-      let clicked = false;
-      document.querySelector(".hamburger").addEventListener("click", () => {
-        clicked = !clicked;
-       
-        if (clicked) {
-          document.querySelector(".menu").style.cssText =
-            "display: block;visibility: visible;z-index: 1;border-radius:5%;  ";
+    <!-- <script>
+      const menuBtn = document.querySelector(".hamburger");
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          menuOpen = true;
         } else {
-          document.querySelector(".menu").style.cssText = "visibility: hidden;";
+          menuBtn.classList.remove("open");
+          menuOpen = false;
         }
       });
-    </script>
+    </script> -->
+
+
     <script>
-     /*  let clicked = false;
-      document.querySelector(".hamburger").addEventListener("click", () => {
-        clicked = !clicked;
+      const myMenu2 = document.querySelector(".hamburger");
+      myMenu2.addEventListener("click", () => {
+        document.body.classList.toggle("open");
         
-        if (clicked) {
-          document.querySelector(".menu-wrapper").style.cssText =
-            "border: 2px solid white;";
-        } else {
-          document.querySelector(".menu-wrapper").style.cssText =
-            "visibility: hidden;";
-        }
-      }); */
+      });
     </script>
+ <div class="open"></div>
+
   </body>
 </html>

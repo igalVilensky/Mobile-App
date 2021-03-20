@@ -66,7 +66,7 @@ p {
 
 .main-nav {
   list-style-type: none;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -186,6 +186,7 @@ button {
   width: 3rem;
   height: 3rem;
 }
+
 .hamburger div {
   height: 0.22rem;
   width: 2.5rem;
@@ -214,12 +215,13 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     /* justify-content: center; */
-    background-color: rgb(148, 148, 148);
+    /* background-color: rgb(148, 148, 148); */
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
     min-height: 40vh;
+    z-index: 1;
   }
 
   .hamburger {
@@ -233,12 +235,17 @@ button {
     height: 3rem;
     visibility: visible;
     position: relative;
+  }
 
-    /* margin-right: 25vw; */
+  .open {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
   }
 
   .navbar {
-    border: 1px dotted rgb(255, 0, 0);
+    /* border: 1px dotted rgb(255, 0, 0); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,10 +258,10 @@ button {
   }
 
   .logo {
-    border: 1px solid rgb(105, 110, 182);
+    /*  border: 1px solid rgb(105, 110, 182); */
     margin-right: 60vw;
     position: relative;
-    top: 3vh;
+    /* top: 1vh; */
     padding-left: 5vw;
   }
 
@@ -274,8 +281,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px dotted rgb(255, 251, 0);
-    background-color: black;
+    /* border: 1px dotted rgb(255, 251, 0);
+    background-color: black; */
     /* visibility: hidden; */
   }
   .main {
@@ -413,7 +420,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    /*  background-color: black; */
     min-width: 50vw;
     height: 10vh;
     margin-top: 4vh;
