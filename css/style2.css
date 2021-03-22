@@ -7,13 +7,13 @@
 body {
   background-image: url(/Mobile-App/img/bg_001.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
   font-family: "Montserrat", sans-serif;
 }
 
-div {
+/* div {
   border: 1px dotted red;
-}
+} */
 
 .wrapper {
   padding-left: 15px;
@@ -54,7 +54,84 @@ div {
   color: white;
 }
 
+/* ----------------
+    MIDDLE SECTION 
+   ---------------- */
+
 .banner {
   /* background-color: rgb(184, 184, 184); */
   color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.img-wrapper {
+  max-width: 35vw;
+  position: absolute;
+  right: 400px;
+  top: 220px;
+}
+
+#twopic {
+  position: relative;
+  left: 50px;
+
+  width: 240px;
+  height: 493.5px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+#onepic {
+  position: relative;
+  right: 50px;
+  bottom: 10px;
+  width: 240px;
+  height: 493.5px;
+  /* object-fit: contain; */
+}
+
+.title {
+  font-size: 50px;
+  max-width: 570px;
+  padding-bottom: 20px;
+}
+
+.descreption {
+  font-size: 25px;
+  max-width: 570px;
+  line-height: 30px;
+}
+
+.btn-wrapper {
+  /* background-color: white; */
+  height: 80px;
+  max-width: 570px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 16px 32px;
+  padding-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: 12vw;
+  min-height: 7vh;
+  border-radius: 5px;
+}
+
+#btn-one {
+  background-color: rgb(107, 252, 24);
+}
+
+#btn-two {
+  background-color: rgb(28, 24, 252);
 }
