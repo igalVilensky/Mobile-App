@@ -21,7 +21,7 @@
         <div></div>
       </div>
     </div>
-      <div id="test">
+      <div id="menu">
         <ul class="main-nav">
         <li><a href="#">PRODUCTS</a></li>
         <li><a href="#">PRICES</a></li>
@@ -29,7 +29,8 @@
         <li><a href="#">TEAM</a></li>
         <li><a href="#">LOGIN</a></li>
         <li><a href="#">SIGN UP</a></li>
-      </ul></div></nav>
+      </ul></div></nav> 
+    </div> 
   </div> 
     <div class="main">
       <div class="left">
@@ -52,12 +53,7 @@
         <div class="btns">
         <div id="btn-one"><button id="but-one"><h3> Learn More</h3></button></div>
         <div id="btn-two"><button id="but-two"><h3> Get the App</h3></button></div>
-      </div>
-    </div>
-      <div class="right">
-       <div id="first"> <img
-        id="twopic"
-        src="/Mobile-App/img/phone_002.png"
+      </div>openng"
         alt="phone_002"
       /></div><div id="second"><img
         id="onepic"
@@ -83,13 +79,21 @@
 
 
     <script>
-      const myMenu2 = document.querySelector(".hamburger");
+      const myMenu2 = document.querySelector(".hamburger"); let click = false;
+
       myMenu2.addEventListener("click", () => {
-        document.body.classList.toggle("open");
+        click = !click; console.log(click);
+        if (click) {
+          document.querySelector("#menu").style.cssText = "display:block;";
+        } else {
+          document.querySelector("#menu").style.cssText = "display:none;";
+        }
+       
+        
         
       });
     </script>
- <div class="open"></div>
+ <!-- <div class="open"></div> -->
 
   </body>
 </html>
