@@ -6,8 +6,8 @@
 
 body {
   background-image: url(/Mobile-App/img/bg_001.jpg);
-  background-repeat: no-repeat;
-  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -134,4 +134,85 @@ body {
 
 #btn-two {
   background-color: rgb(28, 24, 252);
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 800px;
+    position: relative;
+  }
+
+  .wrapper h1 {
+    position: relative;
+    top: 540px;
+    left: 50px;
+    max-width: 800px;
+  }
+
+  .wrapper p {
+    position: relative;
+    top: 560px;
+    left: 50px;
+    max-width: 680px;
+  }
+
+  .header {
+    /* background-color: rgb(247, 0, 0); */
+  }
+  .img-wrapper {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 150px;
+  }
+
+  .btn-wrapper {
+    position: relative;
+    top: 580px;
+    display: flex;
+    justify-content: flex-start;
+    left: 50px;
+    /* background-color: white; */
+    max-width: 680px;
+  }
+
+  .btn {
+    margin-left: 30px;
+  }
+
+  #btn-one {
+    width: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #btn-two {
+    width: 230px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamb {
+    height: 50px;
+    width: 50px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    border: 1px solid white;
+  }
+
+  .hamb div {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+  }
 }
