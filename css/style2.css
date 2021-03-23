@@ -136,7 +136,10 @@ body {
   background-color: rgb(28, 24, 252);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
+  .main-nav2 {
+    display: none;
+  }
   .wrapper {
     max-width: 800px;
     position: relative;
@@ -205,14 +208,108 @@ body {
     align-items: center;
     justify-content: space-evenly;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 40px;
-    border: 1px solid white;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /*   @keyframes test {
+    0% {
+      background: yellow;
+    }
+
+    20% {
+      background: rgb(0, 255, 55);
+    }
+
+    50% {
+      background: rgb(0, 132, 255);
+    }
+
+    80% {
+      background: rgb(255, 0, 191);
+    }
+
+    100% {
+      background: rgb(255, 0, 0);
+    }
+  } */
+
+  .header {
+    /* background: rgb(0, 0, 0); */
+    /*  animation: test 10s infinite; */
+    /* transition: ease-in-out; */
   }
 
   .hamb div {
     height: 3px;
-    width: 25px;
+    width: 35px;
     background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    z-index: 1;
+  }
+
+  #menu {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    bottom: 140px;
+    background-color: black;
+  }
+
+  .main-nav {
+    display: none;
+    /*   flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(225, 0, 255);
+    position: relative;
+    right: 270px;
+    top: 50px; */
+  }
+
+  .main-nav2 {
+    position: relative;
+    top: 110px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*  border: 2px solid rgb(187, 255, 0); */
+  }
+  .main-nav2 > li {
+    padding-top: 60px;
+  }
+
+  .main-nav2 > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .main-nav > li {
+    /*  padding-top: 40px; */
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+  }
+
+  .wrapper {
+  }
+
+  .header {
+    /*  display: flex;
+    background-color: yellow;
+    justify-content: center;
+    position: relative;
+    right: 200px; */
+  }
+
+  .navigation > img {
+    position: relative;
+    /* bottom: 240px; */
+    margin-left: 50px;
+    z-index: 2;
   }
 }
