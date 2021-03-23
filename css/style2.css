@@ -41,7 +41,7 @@ body {
   list-style-type: none;
   padding-left: 0;
   font-weight: 700;
-  margin-bottom: 0;
+  /* margin-top: -50px; */
 }
 
 .main-nav > li {
@@ -54,6 +54,9 @@ body {
   color: white;
 }
 
+.main-nav2 {
+  display: none;
+}
 /* ----------------
     MIDDLE SECTION 
    ---------------- */
